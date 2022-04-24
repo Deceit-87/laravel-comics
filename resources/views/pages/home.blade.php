@@ -2,9 +2,18 @@
 
  @extends('layout.standard')
  @section('content')
- <h1>
-     questo è il content della home
+ <ul>
+     @foreach ($comics as $comic )
+     <li>
 
- </h1>
+         {{$comic['title']}}
+         <img src="{{$comic['thumb']}}" alt="">
+
+     </li>
+         
+     @endforeach
+
+ </ul>
+ 
  @endsection
  
