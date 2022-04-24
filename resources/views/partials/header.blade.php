@@ -47,14 +47,14 @@ $links = [
         <header>
             <div>
               <figure class="logo">
-                <img src="{{asset('/dc-logo.png')}}" alt="">
+                <img src="{{asset('img/dc-logo.png')}}" alt="">
               </figure>
               <nav class="list">
                 <ul>
-                  @foreach ($links as $item)
+                  @foreach ($links as $link)
                       
                   <li>
-                    <a href="{{$item['href']}}">{{$item['text']}}</a>
+                    <a href="{{$link['href']}}">{{$link['text']}}</a>
                   </li>
 
                   @endforeach
