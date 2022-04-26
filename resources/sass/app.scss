@@ -1,3 +1,7 @@
-@import '../sass/partials/header'
+@import '../sass/partials/header';
+@import '../sass/partials/home';
 
-
+body{
+    width: 1080px;
+    margin: 0 auto;
+}

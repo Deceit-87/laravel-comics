@@ -2,3 +2,33 @@ ul {
   list-style: none;
 }
 
+.comics-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.comics-container ul {
+  display: contents;
+}
+
+.comics-container ul .card {
+  width: 15%;
+  aspect-ratio: 1;
+}
+
+.comics-container ul .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+body {
+  width: 1080px;
+  margin: 0 auto;
+}
+
